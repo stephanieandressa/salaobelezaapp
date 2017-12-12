@@ -2,9 +2,6 @@ package beleza.salao.com.br.salao_beleza_app.dao;
 
 import java.util.List;
 
-/**
- * Created by tiozao on 10/12/17.
- */
 
 public interface DAO<T> {
 

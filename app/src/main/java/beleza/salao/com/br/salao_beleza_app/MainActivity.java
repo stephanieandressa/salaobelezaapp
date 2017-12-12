@@ -92,6 +92,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //____________________________________Busca os agendamentos no banco, joga dentro de um SimpleAdapter
+        //Seta o adapter na lista e seta o listener ao clicar em um item da lista
+
         dao = new AgendamentoDAO(getApplicationContext());
         listView = (ListView) findViewById(R.id.calendar_list);
         String[] de = {"data", "horario", "cliente", "servico"};
@@ -100,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
         SimpleAdapter adapter = new SimpleAdapter(this, this.agendamentos, R.layout.layout_agendamento, de, para);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(listener);
+        //__________________________________Até aqui
 
         this.alertDialog = criaAlertDialog();
         this.dialogConfirmacao = criaDialogConfirmacao();
@@ -166,31 +171,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    private class StableArrayAdapter extends ArrayAdapter<Agendamento> {
-
-        HashMap<Agendamento, Integer> mIdMap = new HashMap<Agendamento, Integer>();
-
-        public StableArrayAdapter(Context context, int textViewResourceId,
-                                  List<Agendamento> objects) {
-            super(context, textViewResourceId, objects);
-            for (int i = 0; i < objects.size(); ++i) {
-                mIdMap.put(objects.get(i), i);
-            }
-        }
-
-        @Override
-        public long getItemId(int position) {
-            Agendamento item = getItem(position);
-            return mIdMap.get(item);
-        }
-
-        @Override
-        public boolean hasStableIds() {
-            return true;
-        }
-
     }
 
 }

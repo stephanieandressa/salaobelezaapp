@@ -1,8 +1,6 @@
 package beleza.salao.com.br.salao_beleza_app.entity;
 
-/**
- * Created by tiozao on 10/12/17.
- */
+
 
 public class Agendamento {
 

@@ -12,9 +12,6 @@ import java.util.List;
 import beleza.salao.com.br.salao_beleza_app.entity.Agendamento;
 import beleza.salao.com.br.salao_beleza_app.util.DatabaseHelper;
 
-/**
- * Created by tiozao on 10/12/17.
- */
 
 public class AgendamentoDAO implements DAO<Agendamento>{
 
