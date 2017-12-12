@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Kibeleza</string>
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_login">Kibeleza</string>
+    <string name="title_agenda">Agenda</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Acessar</string>
+    <string name="action_sign_in_short">Cadastrar</string>
+    <string name="error_invalid_email">Email inválido</string>
+    <string name="error_invalid_password">Senha muito curta</string>
+    <string name="error_incorrect_password">Senha incorreta</string>
+    <string name="error_field_required">Campo obrigatório</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_novo_agendamento">Novo Agendamento</string>
+    <string name="remover_sucesso">Sucesso ao remover agendamento</string>
+    <string name="editar">Editar</string>
+    <string name="remover">Remover</string>
+    <string name="opcoes">Opções</string>
+    <string name="confirmacao_exclusao_agendamento">Deseja excluir agendamento?</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+</resources>
